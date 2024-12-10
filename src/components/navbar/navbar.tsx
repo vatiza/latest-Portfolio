@@ -42,22 +42,31 @@ const Navbar = () => {
   );
 
   return (
-    <div className="sticky bg-white  top-0 z-10 ">
-      <div className="px-5 lg:px-20 pt-4">
+    <div className="sticky bg-[#F9F5F2]  py-2 top-0 z-10 ">
+      <div className="px-5 lg:px-20 ">
         <div className="flex items-center justify-between ">
           <div className="flex items-center gap-2">
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" alt="rakib" />
+              <AvatarImage
+                src="https://i.postimg.cc/25ZSSSGg/logo.jpg"
+                alt="rakib"
+              />
               <AvatarFallback>R</AvatarFallback>
             </Avatar>
-            <h1>Rakib</h1>
+            <h1 className="text-2xl font-playrite font-bold">Rakibur Rahman</h1>
           </div>
-          <div className="hidden lg:flex list-none gap-3 font-arimo text-xl cursor-pointer">
+          <div className="hidden  lg:flex list-none gap-3 font-arimo text-xl cursor-pointer">
             {navLink}
           </div>
-          <button className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#263381] bg-transparent px-6 font-medium dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_rgb(76_100_255)] [box-shadow:5px_5px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]">
+          <Link
+            to="contact"
+            smooth="true"
+            duration={500}
+            offset={-100}
+            className="hidden group cursor-pointer relative lg:inline-flex h-9 items-center justify-center overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#263381] bg-transparent px-6 font-medium dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_rgb(76_100_255)] [box-shadow:5px_5px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]"
+          >
             Contact me
-          </button>
+          </Link>
           <div className=" lg:hidden">
             {toggleMenu ? (
               <button onClick={() => setToggleMenu(!toggleMenu)}>

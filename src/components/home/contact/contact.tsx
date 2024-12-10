@@ -4,12 +4,12 @@ import littleboy from "@/app/assets/littleboy-min.png";
 import Image from "next/image";
 const Contact = () => {
   return (
-    <div className="min-h-screen px-5 lg:px-20 " id='contact'>
+    <div className="min-h-screen mt-20 lg:mt-0 px-5 lg:px-20 " id="contact">
       <h1 className="text-center font-arimo font-bold my-2 text-5xl">
         Contact
       </h1>
       <div className="flex justify-center items-center ">
-        <div className="w-2/6">
+        <div className="w-full lg:w-2/6">
           <form className="flex flex-col  gap-3">
             <Input
               className="border-r-4 border-b-4 border-black focus:border-blue-600"
@@ -32,7 +32,7 @@ const Contact = () => {
             />
           </form>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <Image
             priority
             src={littleboy}

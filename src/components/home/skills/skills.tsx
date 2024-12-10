@@ -99,7 +99,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="min-h-screen  px-5 lg:px-20" id="skills">
+    <div className="min-h-screen mt-20 lg:mt-0 px-5 lg:px-20" id="skills">
       <h1 className="text-center text-5xl font-arimo font-bold">Skills</h1>
       <div className="flex flex-wrap gap-2 mt-5">
         {skills.map((skill, index) => (
