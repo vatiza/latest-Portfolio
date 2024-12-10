@@ -2,7 +2,7 @@ import hero from "@/app/assets/hero.png";
 import Image from "next/image";
 const AboutMe = () => {
   return (
-    <div className="min-h-screen px-5 lg:px-20 ">
+    <div className="min-h-screen px-5 lg:px-20 " id="about">
       <h1 className="text-center font-arimo font-bold my-2 text-5xl">
         About Me
       </h1>

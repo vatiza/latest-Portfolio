@@ -4,7 +4,7 @@ import littleboy from "@/app/assets/littleboy-min.png";
 import Image from "next/image";
 const Contact = () => {
   return (
-    <div className="min-h-screen px-5 lg:px-20 ">
+    <div className="min-h-screen px-5 lg:px-20 " id='contact'>
       <h1 className="text-center font-arimo font-bold my-2 text-5xl">
         Contact
       </h1>

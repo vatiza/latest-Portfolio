@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen px-5 lg:px-20 mt-8">
+    <div className="min-h-screen px-5 lg:px-20 mt-8" id="hero">
       <div className="flex items-center">
         <div>
           <h1 className="text-8xl font-playrite font-bold">Hi</h1>

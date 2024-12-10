@@ -2,41 +2,41 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
-
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const navLink = (
     <>
       <li>
-        <a href="#" className="">
+        <Link to="hero" smooth="true" offset={-300} duration={500}>
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="">
+        <Link to="about" smooth="true" offset={-100} duration={500}>
           About
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="#" className="">
+        <Link to="service" smooth="true" offset={-100} duration={500}>
           Service
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="https://rakibs.live/" className="">
-          Portfolio
-        </a>
+        <Link to="skills" smooth="true" offset={-100} duration={500}>
+          Skills
+        </Link>
       </li>
       <li>
-        <a href="#" className="">
-          Contact
-        </a>
+        <Link to="porjects" smooth="true" offset={-100} duration={500}>
+          Projects
+        </Link>
       </li>
 
       <li>
-        <a href="https://rakibs.live/blogs" className="">
-          Blog
-        </a>
+        <Link to="contact" smooth="true" offset={-100} duration={500}>
+          Contact
+        </Link>
       </li>
     </>
   );
@@ -47,13 +47,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between ">
           <div className="flex items-center gap-2">
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarImage src="https://github.com/shadcn.png" alt="rakib" />
+              <AvatarFallback>R</AvatarFallback>
             </Avatar>
             <h1>Rakib</h1>
           </div>
-          <div className="hidden lg:flex list-none gap-3">{navLink}</div>
-          {/* <Button className="hidden lg:flex">Resume</Button> */}
+          <div className="hidden lg:flex list-none gap-3 font-arimo text-xl cursor-pointer">
+            {navLink}
+          </div>
           <button className="group relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#263381] bg-transparent px-6 font-medium dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_rgb(76_100_255)] [box-shadow:5px_5px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]">
             Contact me
           </button>

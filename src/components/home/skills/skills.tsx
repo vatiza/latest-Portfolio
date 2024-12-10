@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Skils = () => {
+const Skills = () => {
   const skills = [
     {
       name: "React Js",
@@ -99,8 +99,8 @@ const Skils = () => {
     },
   ];
   return (
-    <div className="min-h-screen  px-5 lg:px-20">
-      <h1 className="text-center text-5xl font-arimo font-bold">Skils</h1>
+    <div className="min-h-screen  px-5 lg:px-20" id="skills">
+      <h1 className="text-center text-5xl font-arimo font-bold">Skills</h1>
       <div className="flex flex-wrap gap-2 mt-5">
         {skills.map((skill, index) => (
           <div key={index} className="mx-auto">
@@ -115,4 +115,4 @@ const Skils = () => {
   );
 };
 
-export default Skils;
+export default Skills;

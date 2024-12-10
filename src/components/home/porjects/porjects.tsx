@@ -3,7 +3,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen px-5 lg:px-20">
+    <div className="min-h-screen px-5 lg:px-20" id="porjects">
       <h1 className="text-center text-5xl font-bold font-arimo mt-7">
         My Projects
       </h1>
