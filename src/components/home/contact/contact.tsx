@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,11 +8,15 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(e);
+
+    if (!form.current) {
+      toast.error("Form is not available.");
+      return;
+    }
     setIsLoading(true);
     const loadingToastId = toast.loading("Sending message...");
     emailjs
