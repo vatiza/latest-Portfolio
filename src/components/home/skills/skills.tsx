@@ -1,3 +1,4 @@
+import TypingAnimation from "@/components/ui/typing-animation";
 import Image from "next/image";
 import React from "react";
 
@@ -101,6 +102,10 @@ const Skills = () => {
   return (
     <div className="min-h-screen mt-20 lg:mt-0 px-5 lg:px-20" id="skills">
       <h1 className="text-center text-5xl font-arimo font-bold">Skills</h1>
+      <TypingAnimation
+        className="font-playrite text-sm mt-3 lg:mt-0"
+        text="Code that works, skills that shine!."
+      />
       <div className="flex flex-wrap gap-2 mt-5">
         {skills.map((skill, index) => (
           <div key={index} className="mx-auto">

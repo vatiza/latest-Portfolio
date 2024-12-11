@@ -7,6 +7,7 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import TypingAnimation from "@/components/ui/typing-animation";
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +49,11 @@ const Contact = () => {
       <h1 className="text-center font-arimo font-bold my-2 text-5xl">
         Contact
       </h1>
-      <div className="flex justify-center items-center ">
+      <TypingAnimation
+        className="font-playrite text-sm mt-3 lg:mt-0"
+        text="Have project in mind? Let's discuss !"
+      />
+      <div className="flex mt-5 justify-center items-center ">
         <div className="w-full lg:w-2/6">
           <form
             ref={form}
@@ -60,17 +65,20 @@ const Contact = () => {
               type="text"
               name="user_name"
               placeholder="Name"
+              required
             />
             <Input
               className="border-r-4 border-b-4 border-black focus:border-blue-600"
               type="email"
               name="user_email"
               placeholder="Email"
+              required
             />
             <Textarea
               className="border-r-4 border-b-4 border-black focus:border-blue-600"
               placeholder="Type your message here."
               name="message"
+              required
             />
             <input
               type="submit"
