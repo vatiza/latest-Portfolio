@@ -27,8 +27,7 @@ const HeroSection = () => {
           </p>
 
           <Link
-            href="https://rakibs.live/"
-            target="_blank"
+            href="/blogs"
             className="group mt-4  relative inline-flex h-9 items-center justify-center overflow-hidden rounded-md   bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#f6f7ff] to-[#f5f6ff] dark:border-[rgb(76_100_255)] border-2 border-[#263381] bg-transparent px-6 font-bold dark:text-white text-black transition-all duration-100 dark:[box-shadow:5px_5px_rgb(76_100_255)] [box-shadow:5px_5px_rgb(38_51_129)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(38_51_129)] dark:active:[box-shadow:0px_0px_rgb(76_100_255)]"
           >
             Blogs <ExternalLink className="flex ms-1" size={16} />

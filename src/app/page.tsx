@@ -5,9 +5,11 @@ import HeroSection from "@/components/home/hero-section/heroSection";
 import Projects from "@/components/home/porjects/porjects";
 import Skills from "@/components/home/skills/skills";
 import WhatIDo from "@/components/home/what-i-do/whatIdo";
+import Navbar from "@/components/navbar/navbar";
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <HeroSection />
       <AboutMe />
       <WhatIDo />
