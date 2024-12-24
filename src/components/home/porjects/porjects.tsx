@@ -4,6 +4,7 @@ import TypingAnimation from "@/components/ui/typing-animation";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ucShop from "@/app/assets/porjectsImg/ucshop.png";
 const Projects = () => {
   return (
     <div className="lg:min-h-screen px-5 lg:px-20" id="projects">
@@ -21,19 +22,16 @@ const Projects = () => {
             <Image
               height={500}
               width={500}
-              src={rafsan}
+              src={ucShop}
               alt="rafsan tours and travels"
               className="transform scale-100 group-hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h1 className=" text-white mb-5  font-bold  translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-              Rafsan Tourist & Travel BD
+              UC Shop @Game Store
             </h1>
-            <Link
-              href="https://rafsan-tourist-travels-bd.web.app/"
-              target="_blank"
-            >
+            <Link href="https://ucshop.netlify.app/" target="_blank">
               <Button variant="outline" size="icon">
                 <ChevronRight />
               </Button>
